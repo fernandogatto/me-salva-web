@@ -1,46 +1,92 @@
-# Getting Started with Create React App
+<h1 align="center">
+   <img
+        alt="uAcademy"
+        title="uAcademy"
+        src=".github/logo.png"
+        width="150"
+    />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="https://github.com/fernandogatto/" target="_blank">
+    <img src="https://img.shields.io/badge/author-fernandogatto-377FFE" alt="Author">
+  </a>
 
-## Available Scripts
+  <img src="https://img.shields.io/badge/license-MIT-%23377FFE" alt="License">
 
-In the project directory, you can run:
+  <img src="https://img.shields.io/github/forks/fernandogatto/u-academy-web?color=377FFE" alt="Forks">
 
-### `yarn start`
+  <img src="https://img.shields.io/github/stars/fernandogatto/u-academy-web?color=377FFE" alt="Stars">
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> Academic platform demo.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🔗 Table of contents
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Getting start](#start)
+- [Project](#project)
+- [Contribute](#contribute)
+- [License](#license)
 
-### `yarn test`
+## 📌 Technologies <a name="technologies"/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [ReactJS](https://pt-br.reactjs.org/)
+- [React Redux](https://react-redux.js.org/)
+- [Styled Components](https://styled-components.com/)
+- [Material UI](https://material-ui.com/)
 
-### `yarn build`
+## 📂 Installation <a name="installation"/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+First of all, it is important that you have installed [Yarn](https://yarnpkg.com/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+So, run this command in terminal to clone the project via HTTPS:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/fernandogatto/u-academy-web.git
+```
 
-### `yarn eject`
+SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+git@github.com:fernandogatto/u-academy-web.git
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Install dependencies**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+yarn install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🚀 Getting start <a name="start"/>
 
-## Learn More
+Run the following command in order in terminal:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Start the server
+yarn start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 💻 Project <a name="project"/>
+
+Home:
+
+<img
+    alt="Home"
+    title="Home"
+    src=".github/home.png"
+    width="800"
+/>
+
+## 👍 Contribute <a name="contribute"/>
+
+- Fork this repository.
+- Create a branch with your resource: ```git checkout -b feature/my-feature```
+- Submit changes: ```git commit -m "feat: My new feature"```
+- Push your branch: ```git push origin feature/my-feature```
+
+## 📕 License <a name="license"/>
+
+Released in 2021. This project is under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+Build with 💙 by [Fernando Gatto](https://github.com/fernandogatto/).
