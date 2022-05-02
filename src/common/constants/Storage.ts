@@ -1,5 +1,5 @@
 const Storage = {
-    project: `Adote.io`,
+    project: `MeSalva`,
 }
 
 export default Storage;
