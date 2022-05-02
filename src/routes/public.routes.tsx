@@ -12,30 +12,6 @@ const PublicRoutes = (): JSX.Element => {
                 component={Modules.Home}
                 exact
             />
-
-            <Route
-                path="/cursos"
-                component={Modules.Courses}
-                exact
-            />
-
-            <Route
-                path="/planos"
-                component={Modules.Plans}
-                exact
-            />
-
-            <Route
-                path="/login"
-                component={Modules.SignIn}
-                exact
-            />
-
-            <Route
-                path="/cadastrar"
-                component={Modules.SignUp}
-                exact
-            />
         </Switch>
     );
 }

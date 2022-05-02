@@ -26,18 +26,22 @@ const Welcome = () => {
                 dialogOpen={dialogIsOpen}
                 handleCloseDialog={() => setDialogIsOpen(false)}
                 title="Vídeo"
-                videoEmbed="https://www.youtube.com/embed/5qap5aO4i9A"
+                videoEmbed="https://www.youtube.com/embed/aCW0ZI_o0c0"
             />
 
             <Box className="container-welcome">
                 <MaterialContainer className="container-info">
                     <Box className="container-items">
                         <Title variant="h1" dataAos="fade-up">
-                            Desenvolva suas habilidades e defina seu futuro
+                            Curso online
                         </Title>
 
-                        <Typography className="description">
-                            Pensando mais a longo prazo, o entendimento das metas propostas maximiza as possibilidades por conta do impacto na agilidade decisória.
+                        <Typography
+                            className="description"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom"
+                        >
+                            Mantenha o foco para absorver melhor o conteúdo.
                         </Typography>
 
                         <Box className="buttons-row">
@@ -50,7 +54,7 @@ const Welcome = () => {
                                 data-aos="fade-right"
                                 data-aos-anchor-placement="right-left"
                             >
-                                Ver cursos
+                                Ver curso
                             </Button>
 
                             <Tooltip

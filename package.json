@@ -2,7 +2,6 @@
     "name": "u-academy-web",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://fernandogatto.github.io/u-academy-web",
     "dependencies": {
         "@craco/craco": "^6.4.3",
         "@emotion/react": "^11.7.0",

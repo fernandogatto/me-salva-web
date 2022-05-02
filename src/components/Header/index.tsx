@@ -79,7 +79,6 @@ const Header = () => {
                     variant="outlined"
                     component={Link}
                     to="/login"
-                    target="_blank"
                     className="login"
                 >
                     Entrar
@@ -112,7 +111,7 @@ const Header = () => {
                     alt="Logo"
                 />
 
-                {mobileView && (
+                {/* {mobileView && (
                     <IconButton
                         aria-label="Menu"
                         aria-haspopup={true}
@@ -122,9 +121,9 @@ const Header = () => {
                     >
                         <MenuIcon />
                     </IconButton>
-                )}
+                )} */}
 
-                {mobileView ? displayMobile() : displayDesktop()}
+                {/* {mobileView ? displayMobile() : displayDesktop()} */}
             </Box>
         </Container>
     );

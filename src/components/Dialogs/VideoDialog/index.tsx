@@ -5,7 +5,8 @@ import {
     DialogTitle,
     DialogContent,
     DialogActions,
-    Button,
+    IconButton,
+    Tooltip,
 } from '@mui/material';
 
 import {
@@ -13,6 +14,7 @@ import {
     DialogContentContainer,
     DialogActionContainer,
 } from './styles';
+import { Close } from '@mui/icons-material';
 
 interface IVideoDialogProps {
     dialogOpen: boolean;
@@ -40,6 +42,15 @@ const VideoDialog = ({
             <DialogTitle>
                 <DialogTitleContainer>
                     {title}
+
+                    <Tooltip title="Fechar" arrow>
+                        <IconButton
+                            aria-label="Fechar"
+                            onClick={handleCloseDialog}
+                        >
+                            <Close />
+                        </IconButton>
+                    </Tooltip>
                 </DialogTitleContainer>
             </DialogTitle>
 
@@ -56,13 +67,6 @@ const VideoDialog = ({
 
             <DialogActions>
                 <DialogActionContainer>
-                    <Button
-                        color="primary"
-                        onClick={handleCloseDialog}
-                        className="custom-button"
-                    >
-                        Fechar
-                    </Button>
                 </DialogActionContainer>
             </DialogActions>
         </Dialog>

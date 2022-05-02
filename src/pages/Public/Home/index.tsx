@@ -1,6 +1,4 @@
-import React from 'react';
-
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
 import {
     Box,
@@ -11,10 +9,10 @@ import {
 import {
     Footer,
     Header,
-    Plans,
-    MainCourses,
+    TabContainer,
     Welcome,
     Title,
+    FloatContainer,
 } from '@/components';
 
 import { student } from '@/assets';
@@ -26,67 +24,49 @@ const Home = (): JSX.Element => {
         <Container>
             <Header />
 
+            <FloatContainer>
+                <Box className="float-content-children">
+                    <Title variant="h6">
+                        Conteúdo
+                    </Title>
+
+                    <nav>
+                        <Box className="nav-item">
+                            <a
+                                href="#summary"
+                            >
+                                Sumário
+                            </a>
+                        </Box>
+
+                        <Box className="nav-item">
+                            <a href="#summary">
+                                Trilha de aprendizado
+                            </a>
+                        </Box>
+                    </nav>
+                </Box>
+            </FloatContainer>
+
             <Welcome />
 
             <MaterialContainer className="container-info-about">
                 <Box className="container-about">
+                    <Typography className="description">
+                        Eduquem as crianças e não será necessário castigar os homens.
+                    </Typography>
+
                     <Title variant="h2" dataAos="fade-up">
-                        Sobre nós
+                        Pitágoras
                     </Title>
-
-                    <Box className="container-numbers">
-                        <Box
-                            className="container-item"
-                            data-aos="fade-up"
-                            data-aos-anchor-placement="bottom-bottom"
-                        >
-                            <Typography className="number">
-                                +40 mil
-                            </Typography>
-
-                            <Typography className="description">
-                                Estudantes
-                            </Typography>
-                        </Box>
-
-                        <Box
-                            className="container-item"
-                            data-aos="fade-up"
-                            data-aos-anchor-placement="bottom-bottom"
-                            data-aos-offset="100"
-                        >
-                            <Typography className="number">
-                                +12 mil
-                            </Typography>
-
-                            <Typography className="description">
-                                Usuários ativos
-                            </Typography>
-                        </Box>
-
-                        <Box
-                            className="container-item"
-                            data-aos="fade-up"
-                            data-aos-anchor-placement="bottom-bottom"
-                            data-aos-offset="200"
-                        >
-                            <Typography className="number">
-                                +100
-                            </Typography>
-
-                            <Typography className="description">
-                                Horas de conteúdo
-                            </Typography>
-                        </Box>
-                    </Box>
                 </Box>
             </MaterialContainer>
 
             <MaterialContainer>
-                <Box className="container-evolution">
-                    <Box className="evolution-item">
+                <Box className="container-summary" id="">
+                    <Box className="summary-item">
                         <Title variant="h3" dataAos="fade-right">
-                            Por que escolher a uAcademy?
+                            Sumário
                         </Title>
 
                         <Box className="container-grid">
@@ -96,7 +76,7 @@ const Home = (): JSX.Element => {
                                 data-aos-anchor-placement="bottom-bottom"
                             >
                                 <Title variant="h3">
-                                    Formação completa
+                                    Regra de três
                                 </Title>
 
                                 <Typography className="description">
@@ -111,7 +91,7 @@ const Home = (): JSX.Element => {
                                 data-aos-offset="100"
                             >
                                 <Title variant="h3">
-                                    Aulas avançadas
+                                    Área e volume
                                 </Title>
 
                                 <Typography className="description">
@@ -126,7 +106,7 @@ const Home = (): JSX.Element => {
                                 data-aos-offset="200"
                             >
                                 <Title variant="h3">
-                                    Especialização
+                                    Porcentagem
                                 </Title>
 
                                 <Typography className="description">
@@ -141,7 +121,7 @@ const Home = (): JSX.Element => {
                                 data-aos-offset="300"
                             >
                                 <Title variant="h3">
-                                    Monitoria
+                                    Moda e mediana
                                 </Title>
 
                                 <Typography className="description">
@@ -151,7 +131,7 @@ const Home = (): JSX.Element => {
                         </Box>
                     </Box>
 
-                    <Box className="evolution-item">
+                    <Box className="summary-item">
                         <img
                             src={student}
                             alt="Estudante"
@@ -160,9 +140,7 @@ const Home = (): JSX.Element => {
                 </Box>
             </MaterialContainer>
 
-            <MainCourses />
-
-            <Plans />
+            <TabContainer />
 
             <Footer />
         </Container>

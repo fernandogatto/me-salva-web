@@ -25,7 +25,7 @@ export const Container = styled.div`
 
             .title {
                 text-align: left;
-                font-size: 45px;
+                font-size: 55px;
                 color: #FFF;
             }
 

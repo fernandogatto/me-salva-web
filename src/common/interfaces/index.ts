@@ -1,2 +1,1 @@
-export * from './Auth';
-export * from './Child';
+export * from './Exercise';

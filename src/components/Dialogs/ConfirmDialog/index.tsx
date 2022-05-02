@@ -6,7 +6,11 @@ import {
     DialogContent,
     DialogActions,
     Button,
+    Tooltip,
+    IconButton,
 } from '@mui/material';
+
+import { Close } from '@mui/icons-material';
 
 import {
     DialogTitleContainer,
@@ -41,6 +45,15 @@ const ConfirmDialog = ({
             <DialogTitle>
                 <DialogTitleContainer>
                     {title}
+
+                    <Tooltip title="Fechar" arrow>
+                        <IconButton
+                            aria-label="Fechar"
+                            onClick={handleCloseDialog}
+                        >
+                            <Close />
+                        </IconButton>
+                    </Tooltip>
                 </DialogTitleContainer>
             </DialogTitle>
 

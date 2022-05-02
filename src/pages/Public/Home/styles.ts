@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
-import { plans } from '@/assets';
-
 export const Container = styled.div`
     position: relative;
-    background-color: #F0EFF1;
 
     .menu-button {
         color: #fff;
@@ -22,6 +19,39 @@ export const Container = styled.div`
         }
     }
 
+    .float-content {
+        .float-content-children {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                color: #FFF;
+            }
+
+            nav {
+                .nav-item {
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #FFF;
+
+                    & + .nav-item {
+                        margin-top: 20px;
+                    }
+
+                    a {
+                        color: #FFF;
+
+                        font-weight: bold;
+                        transition: .2s ease all;
+
+                        &:hover {
+                            opacity: .6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .container-info-about {
         padding: 0;
         position: relative;
@@ -34,6 +64,7 @@ export const Container = styled.div`
             background-color: #FFF;
             border-radius: 18px;
             text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;
 
             @media(max-width: 425px) {
                 position: relative;
@@ -41,31 +72,21 @@ export const Container = styled.div`
                 border-radius: 0;
             }
 
-            .container-numbers {
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                flex-wrap: wrap;
+            .description {
+                font-size: 30px;
+                font-weight: bold;
+                text-align: left;
+            }
 
-                .container-item {
-                    text-align: center;
-                    margin: 0 15px;
-
-                    .number {
-                        font-size: 48px;
-                        font-weight: bold;
-                        color: ${props => props.theme.palette.primary.main};
-                    }
-
-                    .description {
-                        color: #4E504B;
-                    }
-                }
+            .title {
+                text-align: left;
+                font-size: 24px;
+                margin-bottom: 0;
             }
         }
     }
 
-    .container-evolution {
+    .container-summary {
         margin-top: 270px;
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -79,7 +100,7 @@ export const Container = styled.div`
             }
         }
 
-        .evolution-item:nth-child(1) {
+        .summary-item:nth-child(1) {
             text-align: left;
             padding-bottom: 60px;
 
@@ -108,25 +129,13 @@ export const Container = styled.div`
             }
         }
 
-        .evolution-item:nth-child(2) {
+        .summary-item:nth-child(2) {
             align-self: flex-end;
             justify-self: center;
 
             img {
                 width: 100%;
             }
-        }
-    }
-
-    .plans-container {
-        background:
-            linear-gradient(rgba(1, 1, 55, .8), rgba(1, 1, 55, .95)),
-            url(${plans})
-            no-repeat center center;
-        background-size: cover;
-
-        & > div > div.title-component > .title {
-            color: #FFF;
         }
     }
 `;
