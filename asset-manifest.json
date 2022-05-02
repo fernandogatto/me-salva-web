@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/u-academy-web/static/css/main.a820f480.css",
-    "main.js": "/u-academy-web/static/js/main.5ef7f881.js",
+    "main.js": "/u-academy-web/static/js/main.afb63eb5.js",
     "static/media/home.jpg": "/u-academy-web/static/media/home.92fb732015e90c79a923.jpg",
+    "static/media/footer.jpg": "/u-academy-web/static/media/footer.485d329fbce1d311a4da.jpg",
     "static/media/student.png": "/u-academy-web/static/media/student.f013e797f9cf59b6c4b4.png",
-    "static/media/plans.jpg": "/u-academy-web/static/media/plans.57ebdc493618b49b52a9.jpg",
+    "static/media/error_notification.mp3": "/u-academy-web/static/media/error_notification.25bf780e99bbaa1ada1b.mp3",
+    "static/media/success_notification.mp3": "/u-academy-web/static/media/success_notification.c6e9fa6967b21a18c678.mp3",
     "static/media/logo.png": "/u-academy-web/static/media/logo.5424aaeee4a5502fe92b.png",
     "index.html": "/u-academy-web/index.html",
     "main.a820f480.css.map": "/u-academy-web/static/css/main.a820f480.css.map",
-    "main.5ef7f881.js.map": "/u-academy-web/static/js/main.5ef7f881.js.map"
+    "main.afb63eb5.js.map": "/u-academy-web/static/js/main.afb63eb5.js.map"
   },
   "entrypoints": [
     "static/css/main.a820f480.css",
-    "static/js/main.5ef7f881.js"
+    "static/js/main.afb63eb5.js"
   ]
 }
