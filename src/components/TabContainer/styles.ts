@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     .container-info-study {
-        background-color: #F0EFF1;
+        background-color: ${props => props.theme.palette.secondary.main};
 
         .container-study {
             padding: 60px 0;
@@ -11,7 +11,7 @@ export const Container = styled.div`
                 align-items: center;
 
                 .Mui-selected {
-                    background-color: #FFF;
+                    background-color: ${props => props.theme.palette.primary.contrastText};
                     color: ${props => props.theme.palette.primary.main};
                     border-radius: 18px 18px 0 0;
                 }
@@ -23,7 +23,7 @@ export const Container = styled.div`
             }
 
             .MuiTabPanel-root {
-                background-color: #FFF;
+                background-color: ${props => props.theme.palette.primary.contrastText};
                 border-radius: 0 0 18px 18px;
             }
 

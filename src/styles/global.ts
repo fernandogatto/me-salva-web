@@ -15,7 +15,7 @@ export default createGlobalStyle`
     h1, h2, h3, h4, h5, h6, strong {
         font-weight: 700;
         font-family: 'Roboto';
-        color: #377FFE;
+        color: #B10F2E;
     }
 
     a, p, li {
@@ -127,7 +127,7 @@ export default createGlobalStyle`
                 }
 
                 &.active {
-                    color: #377FFE;
+                    color: #B10F2E;
                 }
 
                 svg {

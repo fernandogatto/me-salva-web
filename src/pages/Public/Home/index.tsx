@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import {
     Box,
@@ -13,6 +13,7 @@ import {
     Welcome,
     Title,
     FloatContainer,
+    Navbar,
 } from '@/components';
 
 import { student } from '@/assets';
@@ -25,27 +26,7 @@ const Home = (): JSX.Element => {
             <Header />
 
             <FloatContainer>
-                <Box className="float-content-children">
-                    <Title variant="h6">
-                        Conteúdo
-                    </Title>
-
-                    <nav>
-                        <Box className="nav-item">
-                            <a
-                                href="#summary"
-                            >
-                                Sumário
-                            </a>
-                        </Box>
-
-                        <Box className="nav-item">
-                            <a href="#summary">
-                                Trilha de aprendizado
-                            </a>
-                        </Box>
-                    </nav>
-                </Box>
+                <Navbar />
             </FloatContainer>
 
             <Welcome />
@@ -63,7 +44,7 @@ const Home = (): JSX.Element => {
             </MaterialContainer>
 
             <MaterialContainer>
-                <Box className="container-summary" id="">
+                <Box className="container-summary" id="summary">
                     <Box className="summary-item">
                         <Title variant="h3" dataAos="fade-right">
                             Sumário
@@ -79,9 +60,9 @@ const Home = (): JSX.Element => {
                                     Regra de três
                                 </Title>
 
-                                <Typography className="description">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                </Typography>
+                                <Title>
+                                    1
+                                </Title>
                             </Box>
 
                             <Box
@@ -94,9 +75,9 @@ const Home = (): JSX.Element => {
                                     Área e volume
                                 </Title>
 
-                                <Typography className="description">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                </Typography>
+                                <Title>
+                                    2
+                                </Title>
                             </Box>
 
                             <Box
@@ -109,9 +90,9 @@ const Home = (): JSX.Element => {
                                     Porcentagem
                                 </Title>
 
-                                <Typography className="description">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                </Typography>
+                                <Title>
+                                    3
+                                </Title>
                             </Box>
 
                             <Box
@@ -124,9 +105,9 @@ const Home = (): JSX.Element => {
                                     Moda e mediana
                                 </Title>
 
-                                <Typography className="description">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                </Typography>
+                                <Title>
+                                    4
+                                </Title>
                             </Box>
                         </Box>
                     </Box>

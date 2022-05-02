@@ -11,19 +11,20 @@ export const Container = styled.div`
         width: 50px;
         height: 82px;
         border-radius: 18px 0px 0px 18px;
-        background-color: #1a2633;
+        background-color: ${props => props.theme.palette.primary.main};
+        transition: .2s ease all;
 
         svg {
-            color: #FFF;
+            color: ${props => props.theme.palette.primary.contrastText};
         }
 
         &:hover {
-            background-color: #2c3e50;
+            background-color: ${props => props.theme.palette.primary.dark};
         }
     }
 
     .control-button-selected {
-        background-color: #2c3e50;
+        background-color: ${props => props.theme.palette.primary.dark};
     }
 
     .float-content {
@@ -31,7 +32,6 @@ export const Container = styled.div`
         width: 100%;
         height: 100vh;
         padding: 30px;
-        background: var(--unnamed-color-2c3e50) 0% 0% no-repeat padding-box;
-        background: #2c3e50 0% 0% no-repeat padding-box;
+        background: ${props => props.theme.palette.primary.dark} 0% 0% no-repeat padding-box;
     }
 `;

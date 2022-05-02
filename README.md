@@ -9,14 +9,14 @@
 
 <p align="center">
   <a href="https://github.com/fernandogatto/" target="_blank">
-    <img src="https://img.shields.io/badge/author-fernandogatto-377FFE" alt="Author">
+    <img src="https://img.shields.io/badge/author-fernandogatto-B10F2E" alt="Author">
   </a>
 
-  <img src="https://img.shields.io/badge/license-MIT-%23377FFE" alt="License">
+  <img src="https://img.shields.io/badge/license-MIT-%23570000" alt="License">
 
-  <img src="https://img.shields.io/github/forks/fernandogatto/u-academy-web?color=377FFE" alt="Forks">
+  <img src="https://img.shields.io/github/forks/fernandogatto/me-salva-web?color=B10F2E" alt="Forks">
 
-  <img src="https://img.shields.io/github/stars/fernandogatto/u-academy-web?color=377FFE" alt="Stars">
+  <img src="https://img.shields.io/github/stars/fernandogatto/me-salva-web?color=B10F2E" alt="Stars">
 </p>
 
 > Academic platform demo.
@@ -43,13 +43,13 @@ First of all, it is important that you have installed [Yarn](https://yarnpkg.com
 So, run this command in terminal to clone the project via HTTPS:
 
 ```bash
-git clone https://github.com/fernandogatto/u-academy-web.git
+git clone https://github.com/fernandogatto/me-salva-web.git
 ```
 
 SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
 
 ```bash
-git@github.com:fernandogatto/u-academy-web.git
+git@github.com:fernandogatto/me-salva-web.git
 ```
 
 **Install dependencies**

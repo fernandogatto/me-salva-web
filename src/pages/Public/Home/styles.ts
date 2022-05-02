@@ -4,7 +4,7 @@ export const Container = styled.div`
     position: relative;
 
     .menu-button {
-        color: #fff;
+        color: ${props => props.theme.palette.primary.contrastText};
     }
 
     .container-header {
@@ -14,40 +14,7 @@ export const Container = styled.div`
 
         nav {
             a {
-                color: #FFF;
-            }
-        }
-    }
-
-    .float-content {
-        .float-content-children {
-            display: flex;
-            flex-direction: column;
-
-            .title {
-                color: #FFF;
-            }
-
-            nav {
-                .nav-item {
-                    padding-bottom: 20px;
-                    border-bottom: 1px solid #FFF;
-
-                    & + .nav-item {
-                        margin-top: 20px;
-                    }
-
-                    a {
-                        color: #FFF;
-
-                        font-weight: bold;
-                        transition: .2s ease all;
-
-                        &:hover {
-                            opacity: .6;
-                        }
-                    }
-                }
+                color: ${props => props.theme.palette.primary.contrastText};
             }
         }
     }
@@ -61,7 +28,7 @@ export const Container = styled.div`
             top: -85px;
             width: 100%;
             padding: 45px;
-            background-color: #FFF;
+            background-color: ${props => props.theme.palette.primary.contrastText};
             border-radius: 18px;
             text-align: center;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;
@@ -82,6 +49,7 @@ export const Container = styled.div`
                 text-align: left;
                 font-size: 24px;
                 margin-bottom: 0;
+                color: ${props => props.theme.palette.primary.main}
             }
         }
     }
@@ -121,9 +89,15 @@ export const Container = styled.div`
                 .item-grid {
                     align-self: stretch;
 
-                    .title {
+                    .title-component:nth-child(1) .title {
                         font-size: 24px;
-                        margin-bottom: 12px
+                        margin-bottom: 0;
+                    }
+
+                    .title-component:nth-child(2) .title {
+                        font-size: 60px;
+                        margin-bottom: 0;
+                        color: ${props => props.theme.palette.primary.main};
                     }
                 }
             }

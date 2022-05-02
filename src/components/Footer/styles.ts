@@ -6,7 +6,7 @@ export const Container = styled.div`
     height: 50vh;
     width: 100%;
     background:
-    linear-gradient(rgba(1, 1, 55, .8), rgba(1, 1, 55,.95)),
+    linear-gradient(rgba(177, 15, 46, .8), rgba(177, 15, 46,.95)),
         url(${footer})
         no-repeat center center;
     background-size: cover;

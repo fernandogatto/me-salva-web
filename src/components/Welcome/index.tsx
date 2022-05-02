@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 import {
     Container as MaterialContainer,
     Box,
     Button,
-    IconButton,
     Typography,
     Tooltip,
 } from '@mui/material';
@@ -45,8 +45,9 @@ const Welcome = () => {
                         </Typography>
 
                         <Box className="buttons-row">
-                            <Button
+                            {/* <Button
                                 aria-label="Ver cursos"
+                                color="secondary"
                                 variant="contained"
                                 component={Link}
                                 to="/cursos"
@@ -55,7 +56,18 @@ const Welcome = () => {
                                 data-aos-anchor-placement="right-left"
                             >
                                 Ver curso
-                            </Button>
+                            </Button> */}
+
+                            <Link
+                                to="course"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={500}
+                                className="button button-secondary"
+                            >
+                                Ver curso
+                            </Link>
 
                             <Tooltip
                                 title="Ver vídeo"

@@ -187,7 +187,7 @@ const TabContainer = () => {
 
     return (
         <Container>
-            <Box className="container-info-study">
+            <Box className="container-info-study" id="course">
                 <MaterialContainer className="container-study">
                     <Title variant="h2" dataAos="fade-up">
                         Trilha de aprendizado
