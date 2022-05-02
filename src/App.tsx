@@ -10,8 +10,6 @@ import { ThemeProvider as MaterialThemeProvider } from '@mui/material/styles';
 
 import store from './infrastructure/store';
 
-// import AppProvider from './contexts';
-
 import Routes from './routes';
 
 import GlobalStyle from './styles/global';
@@ -22,9 +20,7 @@ export default function App() {
     return (
         <ReduxProvider store={store}>
             <MaterialThemeProvider theme={theme}>
-                {/* <AppProvider> */}
-                    <Routes />
-                {/* </AppProvider> */}
+                <Routes />
             </MaterialThemeProvider>
 
             <GlobalStyle />
